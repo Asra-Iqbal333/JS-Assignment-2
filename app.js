@@ -83,7 +83,7 @@
 // document.write("Number : " + num + "<br/>" + "Result : " + convertedNum)
 
 
-//                                    Task # 13(pending)
+//                                    Task # 13
 // var userName = prompt("enter your name");
 // for (var i = 0; i < userName.length; i++) {
 //     if (userName.charCodeAt(i) === 33 || userName.charCodeAt(i) === 64 || userName.charCodeAt(i) === 44 || userName.charCodeAt(i) === 46) {
@@ -105,13 +105,16 @@
 //                                    Task # 14(pending)
 // var bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"];
 // var userInput = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
-// var searchItems = bakeryItems.indexOf(userInput);
-// userInput = userInput.toLowerCase();
-// for (var i = 0; i <= bakeryItems.length; i++) {
-//     if (userInput === bakeryItems) {
-//         alert(bakeryItems + " is available at index " + searchItems + "in our bakery.");
+// var convertedUserInput = userInput.toLowerCase();
+// var searchItems = userInput.indexOf(bakeryItems);
+// for (var i = 0; i < userInput.length; i++) {
+//     // var charCode = userInput.charCodeAt(i)
+//     if (userInput.includes(bakeryItems)) {
+//         // alert(userInput + " is available at index " + searchItems + "in our bakery.");
+//         alert("hekko")
+
+//         break;
 //     }
-//     break;
 // }
 
 
@@ -122,15 +125,15 @@
 
 //                                    Task # 16(pending)
 // var university = "University of Karachi";
-// var convertedString = university.split(0, university.length);
-// for (var i = 0; i < convertedString.length; i++) {
-//     console.log(i + "\n ")
+// var convertedString = university.split("<br/>", university.charAt(i));
+// for (var i = 0; i < university.length; i++) {
+//     document.write(convertedString + "<br/>")
 // }
 
-//                                    Task # 17(pending)
+//                                    Task # 17
 // var userInput = prompt("enter any string");
-// var lastUserInput = userInput.length-1;
-// console.log(lastUserInput)
+// var lastUserInput = userInput.slice(-1);
+// document.write("User input : " + userInput + "<br/>" + "Last character of input : " + lastUserInput);
 
 
 //                                    Task # 18
@@ -204,3 +207,9 @@
 //                             *** Chapter # 31-34 ***
 //                                  DATE METHODS
 //                                    Task # 1
+// var _date = new Date();
+// document.write(_date)
+
+
+//                                    Task # 2
+var month = new Month(c);
